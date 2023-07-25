@@ -16,7 +16,7 @@
 
 #pragma once
 #define EE_HANDS
-#define TAPPING_TERM 200    
+#define TAPPING_TERM 200
 #define IGNORE_MOD_TAP_INTERRUPT
 #define MOUSEKEY_INTERVAL 16
 #define MOUSEKEY_MAX_SPEED 3
@@ -25,4 +25,8 @@
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 30
 
 // place overrides here
+
+// makes space followed by shift always work as shift instead of repeating space
 #define QUICK_TAP_TERM 0
+// makes a very fast shift followed by a keystroke always shift instead of space
+#define PERMISSIVE_HOLD
