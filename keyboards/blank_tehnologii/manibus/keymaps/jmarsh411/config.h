@@ -28,5 +28,9 @@
 
 // makes space followed by shift always work as shift instead of repeating space
 #define QUICK_TAP_TERM 0
-// makes a very fast shift followed by a keystroke always shift instead of space
-#define PERMISSIVE_HOLD
+// makes a very fast shift followed by a keypress always shift instead of space
+// The distinction between this and PERMISSIVE_HOLD is that PERMISSIVE_HOLD
+// only becomes Hold if you press AND release another key.
+// HOLD_ON_OTHER_KEY_PRESS will become Hold if you simple press another key at
+// the same time as the Mod-Tap key
+#define HOLD_ON_OTHER_KEY_PRESS
